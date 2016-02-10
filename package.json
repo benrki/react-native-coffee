@@ -4,6 +4,16 @@
   "description": "A future-facing starter kit for React Native apps.",
   "author": "Josh Habdas <jhabdas@gmail.com> (http://habd.as)",
   "license": "MIT",
+  "keywords": [
+    "mobile",
+    "react-native",
+    "starter-kit",
+    "application-seed",
+    "webpack",
+    "babel",
+    "eslint",
+    "greenkeeper"
+  ],
   "scripts": {
     "android-setup-port": "adb reverse tcp:8081 tcp:8080",
     "bundle": "rnws bundle",
