@@ -3,10 +3,10 @@
  * https://github.com/jhabdas/react-native-webpack-starter-kit
  */
 (function() {
-  'use strict';
+  'use strict'
 
-  var path = require('path');
-  var webpack = require('webpack');
+  var path = require('path')
+  var webpack = require('webpack')
 
   module.exports = {
     debug: true,
@@ -48,5 +48,5 @@
         }
       ]
     }
-  };
-}());
+  }
+}())

@@ -2,52 +2,37 @@
  * React Native Webpack Starter Kit
  * https://github.com/jhabdas/react-native-webpack-starter-kit
  */
-import React, {Component, PropTypes} from 'react-native';
+import React, { Component, PropTypes } from 'react-native'
 
 const {
   Platform,
   StyleSheet,
   Text,
   View,
-} = React;
+} = React
 
-class App extends Component {
+const App = ({
+  instructions,
+}) =>
+  <View style={styles.container}>
+    <Text style={styles.welcome}>
+      Welcome to React Native!
+    </Text>
+    <Text style={styles.instructions}>
+      To get started, edit index.{Platform.OS}.js
+    </Text>
+    <Text style={styles.instructions}>
+      {instructions}
+    </Text>
+  </View>
 
-  static propTypes = {
-    instructions: PropTypes.string,
-  };
+App.propTypes = {
+  instructions: PropTypes.string,
+}
 
-  static defaultProps = {
-    ...Component.defaultProps,
-    instructions: 'Usage instructions not provided.',
-  };
-
-  constructor(props, context) {
-    super(props, context);
-
-    this.state = {
-      platform: Platform.OS,
-    };
-  }
-
-  render() {
-    const { instructions } = this.props;
-    let { platform } = this.state;
-
-    return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.{platform}.js
-        </Text>
-        <Text style={styles.instructions}>
-          {instructions}
-        </Text>
-      </View>
-    );
-  }
+App.defaultProps = {
+  ...Component.defaultProps,
+  instructions: 'Usage instructions not provided.',
 }
 
 let styles = StyleSheet.create({
@@ -67,6 +52,6 @@ let styles = StyleSheet.create({
     color: '#333333',
     marginBottom: 5,
   },
-});
+})
 
-export default App;
+export default App
