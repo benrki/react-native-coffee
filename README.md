@@ -90,7 +90,7 @@ Please see [Submitting to App Store](http://habd.as/reflecting-on-react-native-d
 
 ## Using with Docker
 
-Windows users may experience problems with React Native development. This kit includes a `Dockerfile` which can be used to create a virtualized development environment for building your with React Native on Windows. To use it [set-up Docker Machine](https://docs.docker.com/machine/get-started/) then run the following commands with [cmder](http://cmder.net/) (or similar) to get going:
+Windows users may experience problems with React Native development. This kit includes a `Dockerfile` which can be used to create a virtualized development environment for building your app on a Windows machine. To use it [set-up Docker Machine](https://docs.docker.com/machine/get-started/) then run the following commands with [cmder](http://cmder.net/) (or similar) to get going:
 
 1. Run `docker build --rm .` command from the project root directory to build a virtualized Linunx environment configured for development using this starter kit.
 1. Then shell into the box with `docker run -it sha256:999b9 /bin/bash` (where `sha256:999b9` is the latest tagged image returned from the `docker images` command) and run the app with `cd /app && npm start`.
