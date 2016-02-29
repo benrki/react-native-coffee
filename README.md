@@ -5,7 +5,7 @@
 [![devDependency Status](https://david-dm.org/jhabdas/react-native-webpack-starter-kit/dev-status.svg)](https://david-dm.org/jhabdas/react-native-webpack-starter-kit#info=devDependencies)
 [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/jhabdas/react-native-webpack-starter-kit)
 
-A future-facing starter kit for React Native apps.
+A forward-looking approach to building with React Native.
 
 ![React Native Webpack Starter Kit](https://dl.dropboxusercontent.com/u/10150480/rn-starter-kit-hero-wordswag.jpg)
 
@@ -31,22 +31,24 @@ For an example implementation take a look at [Lumpen Radio](https://github.com/j
 
 ## Installation
 
-Start by cloning this repo and installing dependencies:
+OS X users start by cloning this repo and installing dependencies once your [environment is set-up](https://facebook.github.io/react-native/docs/getting-started.html):
 
 ```sh
-git clone https://github.com/jhabdas/react-native-webpack-starter-kit.git react-native-kit && cd $_
-npm install # or simply npm i
+git clone https://github.com/jhabdas/react-native-webpack-starter-kit.git starter-kit && cd $_
+npm i
 ```
+
+The official React Native [Getting Started documentation](https://facebook.github.io/react-native/docs/getting-started.html) suggests OS X is required for development. However, I've created a custom virual environment for Windows users to get in on the fun too. See [Using with Docker](#using-with-docker) section for setup instructions.
 
 ## Running
 
-Once dependencies are installed, run the kit with:
+Once dependencies are installed, run the starter kit with:
 
 ```sh
 npm start
 ```
 
-This will start a [Webpack Dev Server](https://github.com/webpack/webpack-dev-server) and React Packager. The dev server will watch your JS files for changes and automatically lint and generate the `index.[platform].js` files expected by your React Native iOS or Android app.
+This will start the React Packager and a [Webpack Dev Server](https://github.com/webpack/webpack-dev-server). The dev server will watch your JS files for changes and automatically lint and generate the `index.[platform].js` files expected by your React Native iOS or Android app.
 
 ### iOS
 
@@ -78,9 +80,18 @@ Webpack is configured with a pre-loader to lint the application with ESLint usin
 Building the app for distribution.
 
 1. Execute `npm run bundle` to generate the [offline JS bundle](https://facebook.github.io/react-native/docs/running-on-device-ios.html#using-offline-bundle).
-2. For iOS, update `AppDelegate.m` to load from pre-bundled file on disk.
-3. Test the application, create an archive and submit to the store.
+1. For iOS, update `AppDelegate.m` to load from pre-bundled file on disk.
+1. Test the application, create an archive and submit to the store.
 
 ## Submitting to Store
 
 Please see [Submitting to App Store](http://habd.as/reflecting-on-react-native-development/#submitting-to-app-store) for instructions on iOS. If you have any good Android instructions, please send a PR this way. Good luck and have fun out there!
+
+## Using with Docker
+
+Windows users may experience problems with React Native development. This kit includes a `Dockerfile` which can be used to create a virtualized development environment for building your with React Native on Windows. To use it [set-up Docker Machine](https://docs.docker.com/machine/get-started/) then run the following commands with [cmder](http://cmder.net/) (or similar) to get going:
+
+1. Run `docker build --rm .` command from the project root directory to build a virtualized Linunx environment configured for development using this starter kit.
+1. Then shell into the box with `docker run -it sha256:999b9 /bin/bash` (where `sha256:999b9` is the latest tagged image returned from the `docker images` command) and run the app with `cd /app && npm start`.
+
+If Xcode is not available in your develpment environment (anything except OS X) consider using [rnplay.org](https://rnplay.org/) if you need to see your code running in a simulator. Or consider shipping code directly to a native device using [Exponent](https://exponentjs.com/).
