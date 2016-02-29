@@ -94,4 +94,4 @@ Windows users may experience problems with React Native development. This kit in
 1. Run `docker build --rm .` command from the project root directory to build a virtualized Linunx environment configured for development using this starter kit.
 1. Then shell into the box with `docker run -it sha256:999b9 /bin/bash` (where `sha256:999b9` is the latest tagged image returned from the `docker images` command) and run the app with `cd /app && npm start`.
 
-If Xcode is not available in your develpment environment (anything except OS X) consider using [rnplay.org](https://rnplay.org/) if you need to see your code running in a simulator. Or consider shipping code directly to a native device using [Exponent](https://exponentjs.com/).
+If Xcode is not available on your develpment environment (anything except OS X) consider using [rnplay.org](https://rnplay.org/) if you need to see your code running in a simulator. Or consider shipping code directly to a native device using [Exponent](https://exponentjs.com/).
