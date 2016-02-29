@@ -28,6 +28,7 @@ For an example implementation take a look at [Lumpen Radio](https://github.com/j
 - [React Native](http://facebook.github.io/react-native/) for native app development
 - [Babel](http://babeljs.io/) for ES6+ support
 - [Webpack](https://webpack.github.io/) module loader and bundler
+- [Docker](https://www.docker.com/) and [VirtualBox](https://www.virtualbox.org) for Windows-based development
 
 ## Installation
 
