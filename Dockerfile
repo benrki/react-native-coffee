@@ -35,10 +35,10 @@ RUN \
   tar --strip-components=1 -xzf $WATCHMAN_VERS.tar.gz -C /tmp/watchman && \
   cd /tmp/watchman && \
   ./autogen.sh && ./configure && make && make install && \
-  rm -f $WATCHMAN_VERS.tar.gz && \
+  rm -f $WATCHMAN_VERS.tar.gz && rm -rf /tmp/watchman
 
 # Mount to local file system
-VOLUME /app
+VOLUME /app/src
 
 # Set current working directory
 WORKDIR /app

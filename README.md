@@ -92,7 +92,11 @@ Please see [Submitting to App Store](http://habd.as/reflecting-on-react-native-d
 
 Windows users may experience problems with React Native development. This kit includes a `Dockerfile` which can be used to create a virtualized development environment for building your app on a Windows machine. To use it [set-up Docker Machine](https://docs.docker.com/machine/get-started/) then run the following commands with [cmder](http://cmder.net/) (or similar) to get going:
 
+1. Clone this repo then update `.watchmanconfig` to the following: `{"ignore_dirs": ["node_modules"]}`.
 1. Run `docker build --rm .` command from the project root directory to build a virtualized Linunx environment configured for development using this starter kit.
-1. Then shell into the box with `docker run -it sha256:999b9 /bin/bash` (where `sha256:999b9` is the latest tagged image returned from the `docker images` command) and run the app with `cd /app && npm start`.
+1. Get the ID of the built Docker image by running `docker images` and looking for the most recently created image
+1. Then shell into the box with `docker run -it 09608e4ec865 /bin/bash` (where `09608e4ec865` is the Image ID) and run the app with `npm start`.
 
-If Xcode is not available on your develpment environment (anything except OS X, basically) consider shipping code directly to a native device using [Exponent](https://exponentjs.com/) or dropping transpiled code into [RNPlay](https://rnplay.org/) as a quick and dirty approach.
+Support should be considered _experimental_, though I'm planning to develop a workflow allowing development on CoreOS running on a Raspberry Pi.
+
+If iOS and Android device emulators are not available for your development environment (anything except OS X, basically) consider shipping code directly to a native device using [Exponent](https://exponentjs.com/).
