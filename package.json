@@ -6,12 +6,15 @@
   "license": "MIT",
   "keywords": [
     "mobile",
+    "native",
+    "javascript",
     "react-native",
     "starter-kit",
     "webpack",
     "babel",
     "eslint",
-    "greenkeeper"
+    "greenkeeper",
+    "es2015"
   ],
   "scripts": {
     "android-setup-port": "adb reverse tcp:8081 tcp:8080",
