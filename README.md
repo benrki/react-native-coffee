@@ -35,7 +35,7 @@ For an example implementation take a look at [Lumpen Radio](https://github.com/j
 OS X users start by cloning this repo and installing dependencies once your [environment is set-up](https://facebook.github.io/react-native/docs/getting-started.html):
 
 ```sh
-git clone https://github.com/jhabdas/react-native-webpack-starter-kit.git starter-kit && cd $_
+git clone https://github.com/jhabdas/react-native-webpack-starter-kit.git native-starter-kit && cd $_
 npm i
 ```
 
