@@ -31,7 +31,7 @@
     "npm": ">=2 <4"
   },
   "dependencies": {
-    "react-native": "^0.21.0"
+    "react-native": "^0.22.2"
   },
   "devDependencies": {
     "babel-core": "^6.3.17",
