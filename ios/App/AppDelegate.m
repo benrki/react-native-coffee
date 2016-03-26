@@ -38,7 +38,7 @@
    * Load from pre-bundled file on disk. To re-generate the static bundle
    * from the root of your project directory, run
    *
-   * $ curl 'http://localhost:8080/index.ios.bundle?dev=false&minify=true' -o ios/main.jsbundle
+   * $ curl 'http://localhost:8080/index.ios.bundle?platform=ios&dev=false&minify=true' -o ios/main.jsbundle
    *
    * see http://facebook.github.io/react-native/docs/runningondevice.html
    */
