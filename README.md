@@ -97,6 +97,6 @@ Windows users may experience problems with React Native development. This kit in
 1. Get the ID of the built Docker image by running `docker images` and looking for the most recently created image.
 1. Then shell into the box with `docker run -it 09608e4ec865 /bin/bash` (where `09608e4ec865` is the Image ID) and run the app with `npm start`.
 
-Support should be considered _experimental_, though I'm planning to develop a workflow allowing development on CoreOS running on a [Raspberry Pi](https://www.raspberrypi.org).
+Support should be considered _experimental_.
 
 If iOS and Android device emulators are not available for your development environment (anything except OS X, basically) consider shipping code directly to a native device using [Exponent](https://exponentjs.com/).
