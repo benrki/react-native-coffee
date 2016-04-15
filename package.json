@@ -1,7 +1,7 @@
 {
-  "name": "App",
+  "name": "react-native-webpack-starter-kit",
   "version": "0.1.0",
-  "description": "A forward-looking approach to building with React Native.",
+  "description": ":herb: Write your React Native app using ES7+ with Webpack and Babel.",
   "author": "Josh Habdas <jhabdas@gmail.com> (http://habd.as)",
   "license": "MIT",
   "keywords": [
@@ -20,6 +20,7 @@
     "android-setup-port": "adb reverse tcp:8081 tcp:8080",
     "bundle": "rnws bundle",
     "test": "eslint src",
+    "lint": "npm run lint",
     "start": "rnws start"
   },
   "repository": {
