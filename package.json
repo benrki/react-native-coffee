@@ -19,8 +19,8 @@
   "scripts": {
     "android-setup-port": "adb reverse tcp:8081 tcp:8080",
     "bundle": "rnws bundle",
-    "test": "eslint src",
-    "lint": "npm run lint",
+    "test": "npm run lint",
+    "lint": "eslint src",
     "start": "rnws start"
   },
   "repository": {
