@@ -26,6 +26,7 @@ const App = ({
     </Text>
   </View>
 
+/* eslint-disable immutable/no-mutation */
 App.propTypes = {
   instructions: PropTypes.string,
 }
@@ -34,8 +35,9 @@ App.defaultProps = {
   ...Component.defaultProps,
   instructions: 'Usage instructions not provided.',
 }
+/* eslint-enable immutable/no-mutation */
 
-let styles = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',

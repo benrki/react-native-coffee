@@ -5,7 +5,8 @@
     "es6": true
   },
   "plugins": [
-    "react"
+    "react",
+    "immutable"
   ],
   "rules": {
     "indent": [2, 2],
@@ -52,7 +53,10 @@
     "react/require-extension": 1,
     "react/self-closing-comp": 1,
     "react/sort-comp": 1,
-    "react/wrap-multilines": 1
+    "react/wrap-multilines": 1,
+    "immutable/no-let": 2,
+    "immutable/no-this": 2,
+    "immutable/no-mutation": 2
   },
   "extends": "eslint:recommended"
 }
