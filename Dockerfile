@@ -14,7 +14,7 @@ FROM node:argon
 
 # Set environment variables
 ENV NODE_ENV development
-ENV KIT_VERS v2.22.0
+ENV KIT_VERS v2.23.0
 ENV WATCHMAN_VERS v4.5.0
 
 # Fetch and install
