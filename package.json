@@ -45,7 +45,7 @@
     "babel-preset-stage-1": "^6.3.13",
     "eslint": "~2.8.0",
     "eslint-loader": "^1.1.1",
-    "eslint-plugin-react": "^4.0.0",
+    "eslint-plugin-react": "^5.0.1",
     "react-native-webpack-server": "^0.9.0",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.0"
