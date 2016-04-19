@@ -39,7 +39,7 @@ git clone https://github.com/jhabdas/react-native-webpack-starter-kit.git native
 npm i
 ```
 
-The official React Native [Getting Started documentation](https://facebook.github.io/react-native/docs/getting-started.html) suggests OS X is required for development. However, I've created a custom virual environment for Windows users to get in on the fun too. See [Using with Docker](#using-with-docker) section for setup instructions.
+The official React Native [Getting Started documentation](https://facebook.github.io/react-native/docs/getting-started.html) suggests OS X is required for development. However, I've spiked on a virual environment with Docker so Windows users can start to get in on the fun too. See [Using with Docker](#using-with-docker) section for setup instructions.
 
 ## Running
 
