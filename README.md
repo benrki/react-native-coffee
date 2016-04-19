@@ -13,7 +13,7 @@ Inverts control away from RN build system. Takes a minimalistic lean on tooling 
 
 Leverages [`react-native-webpack-server`](https://github.com/mjohnston/react-native-webpack-server). Incorporates sane default linting rules. Uses [Greenkeeper](https://github.com/greenkeeperio/greenkeeper) to help keep dependencies fresh. Unprescriptive in terms of test frameworks and Flux implementations. Use with [EditorConfig](http://editorconfig.org/) to help code consistency between editors. Try with [`webpack-notifier`](https://github.com/Turbo87/webpack-notifier) for desktop notifications on OS X. Promotes use of functional stateless React components.
 
-For an example implementation take a look at [Lumpen Radio]. Or check out a few other [Awesome React Boilerplates](http://habd.as/awesome-react-boilerplates/#react-native).
+This kit was originally used to build, and later extracted from, [Lumpen Radio].
 
 ## Requirements
 
