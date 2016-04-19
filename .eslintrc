@@ -5,8 +5,7 @@
     "es6": true
   },
   "plugins": [
-    "react",
-    "immutable"
+    "react"
   ],
   "rules": {
     "indent": [2, 2],
