@@ -6,7 +6,7 @@
 # https://github.com/jhabdas/react-native-webpack-starter-kit
 #
 # Demonstrates use of Starter Kit in a virtualized Linux development environment.
-# Enables React Native development for Windows. OS X is supported also, but why would you?
+# Helps enable React Native development for Windows. OS X workflows also possible.
 #
 
 # Pull base image
