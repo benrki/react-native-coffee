@@ -32,14 +32,15 @@ This kit was originally used to build, and later extracted from, [Lumpen Radio].
 
 ## Installation
 
-OS X users start by cloning this repo and installing dependencies once your [environment is set-up](https://facebook.github.io/react-native/docs/getting-started.html):
+Clone repo and install dependencies once your [environment is set-up](https://facebook.github.io/react-native/docs/getting-started.html):
 
 ```sh
-git clone https://github.com/jhabdas/react-native-webpack-starter-kit.git native-starter-kit && cd $_
+git clone -o upstream -b master --single-branch \
+    https://github.com/jhabdas/react-native-webpack-starter-kit.git native-starter-kit && cd $_
 npm i
 ```
 
-The official React Native [Getting Started documentation](https://facebook.github.io/react-native/docs/getting-started.html) suggests OS X is required for development. However, I've spiked on a virual environment with Docker so Windows users can start to get in on the fun too. See [Using with Docker](#using-with-docker) section for setup instructions.
+See [Using with Docker](#using-with-docker) for experimental Windows setup.
 
 ## Running
 
