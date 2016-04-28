@@ -1,19 +1,6 @@
-# react-native-webpack-starter-kit
+# react-native-coffee
 
-[![Build Status](https://travis-ci.org/jhabdas/react-native-webpack-starter-kit.svg?branch=master)](https://travis-ci.org/jhabdas/react-native-webpack-starter-kit)
-[![Dependency Status](https://david-dm.org/jhabdas/react-native-webpack-starter-kit.svg)](https://david-dm.org/jhabdas/react-native-webpack-starter-kit)
-[![devDependency Status](https://david-dm.org/jhabdas/react-native-webpack-starter-kit/dev-status.svg)](https://david-dm.org/jhabdas/react-native-webpack-starter-kit#info=devDependencies)
-[![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/jhabdas/react-native-webpack-starter-kit)
-
-Write your React Native app using ES7+ with Webpack and Babel.
-
-![React Native Webpack Starter Kit](https://dl.dropboxusercontent.com/u/10150480/rn-starter-kit-hero-wordswag.jpg)
-
-Inverts control away from RN build system. Takes a minimalistic lean on tooling to provide a minimal seed. Follows the latest React Native stable release. Uses Babel 6 for ES6-style JSX transpilation with ES7 Stage 1 support, and Webpack as a dev server and module bundler. Provides static code linting using ESLint and build output in the same console window, and Source Maps for debugging in the browser.
-
-Leverages [`react-native-webpack-server`](https://github.com/mjohnston/react-native-webpack-server). Incorporates sane default linting rules. Uses [Greenkeeper](https://github.com/greenkeeperio/greenkeeper) to help keep dependencies fresh. Unprescriptive in terms of test frameworks and Flux implementations. Use with [EditorConfig](http://editorconfig.org/) to help code consistency between editors. Try with [`webpack-notifier`](https://github.com/Turbo87/webpack-notifier) for desktop notifications on OS X. Promotes use of functional stateless React components.
-
-This kit was originally used to build, and later extracted from, [Lumpen Radio].
+Cloned from https://github.com/pixshatterer/react-native-webpack-starter-kit
 
 ## Requirements
 
@@ -36,7 +23,7 @@ Clone repo and install dependencies once your [environment is set-up](https://fa
 
 ```sh
 git clone -o upstream -b master --single-branch \
-    https://github.com/jhabdas/react-native-webpack-starter-kit.git native-starter-kit && cd $_
+  https://github.com/benrki/react-native-coffee.git && cd $_
 npm i
 ```
 
@@ -104,4 +91,3 @@ Windows users may experience problems with React Native development. This kit in
 
 If iOS and Android device emulators are not available for your development environment (anything except OS X, basically) consider shipping code directly to a native device using [Exponent](https://exponentjs.com/).
 
-[Lumpen Radio]: https://github.com/jhabdas/lumpen-radio
