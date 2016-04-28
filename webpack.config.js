@@ -19,6 +19,9 @@
       path: path.resolve(__dirname, 'build'),
       filename: '[name].js',
     },
+    resolve: {
+      extensions: ['', '.js', '.cjsx', '.coffee']
+    },
     module: {
       preLoaders: [
         {
@@ -28,6 +31,16 @@
         }
       ],
       loaders: [
+        {
+          test: /\.cjsx$/,
+          exclude: /node_modules/,
+          loaders: ['coffee', 'cjsx']
+        },
+        {
+          test: /\.coffee$/,
+          exclude: /node_modules/,
+          loader: 'coffee'
+        },
         {
           test: /\.js$/,
           include: /node_modules\/react-native/,
